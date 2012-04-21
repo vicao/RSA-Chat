@@ -58,7 +58,6 @@ _hideenc_
 goodbye
 .bye
 
-
 ./python client.py 12345
 Enter nth prime: 29
 Enter mth prime: 30
