@@ -1,5 +1,12 @@
 Kishin Manglani and Yuhui Xie
 
+make
+make runserver
+make runclient
+make build
+make clean
+make run
+
 Implementation:
 
 - We used python to build the server and client, and Java to build the cracker. 
