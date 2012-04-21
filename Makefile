@@ -1,6 +1,11 @@
 all: 
+	javac MiniRSA.java
+
 build:
 	javac MiniRSA.java
+	
+runcracker: build
+	java MiniRSA 1531 2623
 
 runserver:
 	python server.py 29292
