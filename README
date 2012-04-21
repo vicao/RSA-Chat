@@ -3,6 +3,7 @@ Kishin Manglani and Yuhui Xie
 make
 make runserver
 make runclient
+make runcracker
 make build
 make clean
 make run
@@ -15,16 +16,21 @@ Implementation:
 - Each has two threads, one to read messages and one to write them.
 - The respective threads encrypt and decrypt messages sent.
 - The various features work using booleans or checking what the user inputted and displays the relevant information.
+- The cracker is included as a separate program. We were going to integrate it with chat, but chose not to because it was not in the spec.
+
 
 Usage:
 
-./python server.py PORTNUM
-./python client.py PORTNUM
+python server.py PORTNUM
+python client.py PORTNUM
 
 .bye = exits the conversation and program
 _showenc_ = displays encryption (numbers) of sent and received messages, along with message
 _hideenc_ = hides encryption
 _showkeys_ = displays users public and private keys, in addition to other users public keys
+
+javac MiniRSA.java
+java MiniRSA public_key_e public_key_c
 
 Example:
 
@@ -64,6 +70,18 @@ not much (typed here)
 goodbye (not typed here)
 Chat ended by other user
 
+java MiniRSA 451 2623
+Enter the c that goes with the public key
+a was 43 b was 61
+The totient was 2520
+D was found out to be 1531
+Enter a letter to encrypt/decrypt, or quit to exit
+1148
+This char decrypted to 72
+The letter is H
+Enter a letter to encrypt/decrypt, or quit to exit
+quit
+Done
 
 
 Collaboration:
