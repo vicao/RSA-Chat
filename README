@@ -1,4 +1,3 @@
-Kishin Manglani and Yuhui Xie
 
 make
 make runserver
@@ -10,7 +9,7 @@ make run
 
 Implementation:
 
-- We used python to build the server and client, and Java to build the cracker. 
+- Used python to build the server and client, and Java to build the cracker. 
 - When the client connects to the server it sends the public keys to the server and then the server sends its keys.
 - This is done in the background after the connection has been made.
 - Each has two threads, one to read messages and one to write them.
@@ -81,10 +80,3 @@ The letter is H
 Enter a letter to encrypt/decrypt, or quit to exit
 quit
 Done
-
-
-Collaboration:
-We both worked together extensively on this project. Initially we were going to use a java server and python client.
-However, we decided to work together on the python code because it was easier to code in.
-We generally pair programmed in the lab when working together. Though initially things took longer, we soon worked faster together.
-Overall, it was very enjoyable working together. We got to learn more about each other as individuals and learn different coding styles.
